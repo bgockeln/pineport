@@ -43,7 +43,7 @@ irene = NPC(
 
 jeremy = NPC(
     name="Jeremy Clarkson",
-    home=(3, 2),
+    home=(0, 3),
     work=(5, 2),
     schedule={
         (8, 19): (5, 2), # works from 8 am till 7 pm at the gastation
@@ -57,8 +57,63 @@ lisa = NPC(
     home=(0, 3),
     work=(3, 2),
     schedule={
-        (10, 16): (3, 2),
-        (2, 24): (0, 3),
-        (0, 10): (3, 3)
+        (10, 16): (3, 2), # works from 10 till to 4 pm
+        (16, 24): (0, 3), # home
+        (0, 10): (3, 3) # home
+    }
+)
+
+caleb = NPC(
+    name="Caleb Cooper",
+    home=(0, 4),
+    work=(3, 3),
+    schedule={
+        (8, 19): (5, 3), # works from 8 am till 7 pm
+        (19, 24): (0, 4), # home
+        (0, 8): (0, 4) # home
+    }
+)
+
+barbara = NPC(
+    name="Barbara Cooper",
+    home=(0, 4),
+    work=(5, 4),
+    schedule={
+        (8, 16): (5, 4), # works from 8 am till 4 pm
+        (16, 24): (0, 4), # home
+        (0, 8): (0, 4) # home
+    }
+) 
+
+forest = NPC(
+    name="Forest Perry",
+    home=(2, 3),
+    work=(3, 4),
+    schedule={
+        (8, 18): (3, 4), # works from 8 am to 6 pm
+        (18, 24): (2, 3), # home
+        (0, 8): (2, 3) # home
+    }
+)
+
+macey = NPC(
+    name="Macey Perry",
+    home=(2, 3),
+    work=(5, 3),
+    schedule={
+        (8, 16): (5, 3), # works from 8 am till 4 pm
+        (16, 24): (2, 3), # home
+        (0, 8): (2, 3) # home
+    }
+)
+
+dictus = NPC(
+    name="Father Dictus",
+    home=(2, 4),
+    work=(0, 2),
+    schedule={
+        (9, 19): (0, 2), #works from 9 am till 7 pm
+        (19, 24): (2, 4), # home
+        (0, 9): (2, 4) # home
     }
 )

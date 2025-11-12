@@ -1,6 +1,7 @@
 import pygame
 import sys
-from world.buildings import Building, bar, diner, library, gasstation, ehrentraut_house, clarksonhogan_house
+from world.buildings import Building, bar, diner, library, gasstation, genstore, postoffice, policestat, bank, church
+from world.buildings import ehrentraut_house, clarksonhogan_house, calebbarb_house, perry_house, dictus_house
 from world.city import City, Street
 from world.npc import mike, irene
 
@@ -137,7 +138,7 @@ def load_layout(city):
     city.place_building(7, 1, Building("Light House"))
 
     # Row 2
-    city.place_building(0, 2, Building("Church"))
+    city.place_building(0, 2, church)
     city.place_street(1, 2, Street("Pleasant Street"))
     city.place_building(2, 2, ehrentraut_house)
     city.place_building(3, 2, library)
@@ -149,20 +150,20 @@ def load_layout(city):
     # Row 3
     city.place_building(0, 3, clarksonhogan_house)
     city.place_street(1, 3, Street("Pleasant Street"))
-    city.place_building(2, 3, Building("NPC 4's House"))
-    city.place_building(3, 3, Building("General Store"))
+    city.place_building(2, 3, perry_house)
+    city.place_building(3, 3, genstore)
     city.place_street(4, 3, Street("Main Street"))
-    city.place_building(5, 3, Building("Bank"))
+    city.place_building(5, 3, bank)
     city.place_street(6, 3, Street("Franklin Street"))
     city.place_building(7, 3, Building("Fishing Docks"))
 
     # Row 4
-    city.place_building(0, 4, Building("NPC 2's House"))
+    city.place_building(0, 4, calebbarb_house)
     city.place_street(1, 4, Street("Pleasant Street"))
-    city.place_building(2, 4, Building("NPC 5's House"))
-    city.place_building(3, 4, Building("Police Station"))
+    city.place_building(2, 4, dictus_house)
+    city.place_building(3, 4, policestat)
     city.place_street(4, 4, Street("Main Street"))
-    city.place_building(5, 4, Building("Post Office"))
+    city.place_building(5, 4, postoffice)
     city.place_street(6, 4, Street("Franklin Street"))
     city.place_building(7, 4, Building("Pier"))
 

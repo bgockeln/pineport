@@ -108,7 +108,7 @@ def game_loop():
     if not player_inside:
         describe_location(city, player_x, player_y, gui)
 
-    game_time = 14.0 # start at noon (24 hour clock)
+    game_time = 8.0 # start at noon (24 hour clock)
 
     while True:
         cmd = gui.handle_events()
