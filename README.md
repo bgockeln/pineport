@@ -1,4 +1,7 @@
 # Pineport - A Small Town Simulator
+![Python](https://img.shields.io/badge/python-3.12-blue)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Status](https://img.shields.io/badge/status-work--in--progress-yellow)
 
 While walking around the city in **The Evil Within 2**, I wondered if I could create a town on a much smaller scale in Python — **a text-based town simulator**.
 
